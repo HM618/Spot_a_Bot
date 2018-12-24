@@ -37,25 +37,25 @@ Profile level testing was done using Random Forest. Because a random forest mode
 - when a profile is created
 - the type of background image that is used.
 <br>
-<center><img src='images/cm.png'></center>
+<center><img src='Images/cm.png'></center>
 
 Using only these features I was able to achieve a 92% accuracy score.
 <br>
 ### Text Analysis
 I then looked into the content of tweets to see if there were any features (words) that differentiate bots from real people. I chose to use a logistic regression classifier to do so.
 <br>
-<center><img src= 'images/Genuine_Words_tidy.png'></center>
+<center><img src= 'Images/Genuine_Words_tidy.png'></center>
 You can see from this word cloud that genuine users like tweeting words like ‘love, and ‘lol’ and ‘thank’. When I went to see what the bots were tweeting I noticed they were all in Italian, and that my model may have been predicting English language or Italian.
 <br>
-<center><img src= 'images/Bot_words_w_Stop_Words.png'></center>
+<center><img src= 'Images/Bot_words_w_Stop_Words.png'></center>
 <br>I decided to limit my data to that of only Italian tweets, balance the data and test my model once more.
 <br>
 <b>*Real Italians*</b>
 <br>
-<img src='images/real italians word cloud.png'>
+<img src='Images/real italians word cloud.png'>
 <b>*Synthetic Italians*</b>
 <br>
-<img src='images/synthetic italian word cloud.png'>
+<img src='Images/synthetic italian word cloud.png'>
 <br>
  I could see that real Italians do speak in a humanistic and similar way to that of genuine tweeters made in english, yet these spam Italians shared a heavy sentiment. With a balanced Italians-Only dataset I was able to achieve a 94% accuracy.
 
